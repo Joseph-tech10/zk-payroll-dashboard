@@ -17,7 +17,7 @@ function PayrollRunPage({ params }: PayrollRunPageProps) {
     ? new Date(run.updatedAt).toLocaleString()
     : "Never";
 
-  return ({
+  return (
     <DashboardLayout>
       <div className="mb-4">
         <p className="text-sm text-muted-foreground">

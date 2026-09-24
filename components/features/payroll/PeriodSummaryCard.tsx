@@ -149,7 +149,7 @@ function PeriodSummaryCard({
                 role="listitem"
                 className="rounded-md border border-gray-100 p-3 flex flex-col items-begin gap-1"
               >
-                <Icon className=}{`w-4 h-4 ${meta.toneClass}`} aria-hidden="true" />
+                <Icon className={`w-4 h-4 ${meta.toneClass}`} aria-hidden="true" />
                 <p className="text-2xl font-bold text-gray-900" aria-live="polite">
                   {counts[meta.key]}
                 </p>

@@ -141,7 +141,7 @@ function PayrollSummary() {
             ? "Generating..."
             : "Generate Mock Payroll Proof"}
         </button>
-        <p className=`text-sm ${proofToneClass}` aria-live="polite" role="status">
+        <p className={`text-sm ${proofToneClass}`} aria-live="polite" role="status">
           {proofState.message ?? "No proof generated yet."}
         </p>
       </article>

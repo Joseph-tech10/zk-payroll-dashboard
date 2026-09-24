@@ -64,7 +64,7 @@ export async function DELETE(request: NextRequest, { params }: RouteContext) {
     const authHeader = request.headers.get("authorization");
     if (!authHeader) {
       return withCors(
-        errorResponse("UNAUTHORIZED\", "Authorization header missing.", 401),
+        errorResponse("UNAUTHORIZED", "Authorization header missing.", 401),
         request,
       );
     }
